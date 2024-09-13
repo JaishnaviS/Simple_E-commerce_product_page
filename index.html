@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Product Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Product Page</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">Contact</a>
+            <a href="#">Cart (<span id="cart-count">0</span>)</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="product-details">
+            <div class="product-image">
+                <img src="https://m.media-amazon.com/images/I/51p+Mobu88L._AC_UF1000,1000_QL80_.jpg.jpg" alt="Product Image" id="main-image">
+            </div>
+            <div class="product-info">
+                <h2 id="product-name">Awesome Product</h2>
+                <p id="product-price">Rs.350.00</p>
+                <p id="product-description">
+                    This is an amazing product that you will love to own.
+                </p>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" min="1" value="1">
+                <button id="add-to-cart">Add to Cart</button>
+                <p id="add-message"></p>
+            </div>
+        </section>
+
+        <section class="related-products">
+            <h3>Related Products</h3>
+            <div class="product-grid">
+                <div class="related-product">
+                    <img src="https://t3.ftcdn.net/jpg/00/28/78/32/360_F_28783272_McJzgAYLurO4wEnWAfwDDq9a9RpXRofe.jpg" alt="Related Product 1">
+                    <p>Product 1 - Rs.630.00</p>
+                </div>
+                <div class="related-product">
+                    <img src="https://i5.walmartimages.com/asr/301f7f0a-b7a3-4146-93c1-cf2312e5a36c.df78577827f1010439b4b3a0c7948e45.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF.jpg" alt="Related Product 2">
+                    <p>Product 2 - Rs.340.00</p>
+                </div>
+                <div class="related-product">
+                    <img src="https://www.macrobaby.com/cdn/shop/files/ashton-drake-presley-vinyl-girl-baby_image_3.jpg?v=1718743370.jpg" alt="Related Product 3">
+                    <p>Product 3 - Rs.235.00</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
